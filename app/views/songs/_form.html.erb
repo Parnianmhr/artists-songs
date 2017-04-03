@@ -1,0 +1,7 @@
+  <%= form_for [@artist, @artist.songs.new] do |f| %>
+  <div class="form-group">
+    <%= f.text_field :name, class: 'form-control', placeholder: 'Song title' %>
+  </div>
+
+  <%= f.submit "Add new song", class: "btn btn-success"%>
+  <% end %>
